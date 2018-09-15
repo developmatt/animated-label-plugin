@@ -104,7 +104,7 @@ eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!\n * jQ
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("jQuery = $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\r\n\r\n(function( $ ) {\r\n    $.fn.myPlugin = function() {\r\n        \r\n        let form = this;\r\n        let label = $(form).find('label');\r\n        let input = $(form).find('input');\r\n\r\n        $(input).focusin(function(){\r\n            $(label).css('bottom', '100%');\r\n        })\r\n        \r\n        $(input).focusout(function(){\r\n            if($(label).val() == ''){\r\n                $(label).css('bottom', '0');\r\n            }\r\n        })\r\n    };\r\n})( jQuery );\r\n\r\n\r\n$('form').myPlugin();\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("jQuery = $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\r\n\r\n(function( $ ) {\r\n    $.fn.animatedLabelPlugin = function() {\r\n        \r\n        let form = this;\r\n        let label = $(form).find('label');\r\n        let input = $(form).find('input');\r\n\r\n        $(input).focusin(function(){\r\n            $(label).css('bottom', '100%');\r\n        })\r\n        \r\n        $(input).focusout(function(){\r\n            if($(label).val() == ''){\r\n                $(label).css('bottom', '0');\r\n            }\r\n        })\r\n    };\r\n})( jQuery );\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 
