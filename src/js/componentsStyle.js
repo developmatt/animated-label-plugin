@@ -4,7 +4,6 @@ const formStyle = {
 
 const inputStyle = {
     display: 'block',
-    height: '100%',
     width: '100%'
 };
 
