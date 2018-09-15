@@ -1,5 +1,3 @@
-jQuery = $ = require('jquery');
-
 (function( $ ) {
     $.fn.animatedLabelPlugin = function() {
         
@@ -17,4 +15,4 @@ jQuery = $ = require('jquery');
             }
         })
     };
-})( jQuery );
+})( $ );
