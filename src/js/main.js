@@ -1,7 +1,7 @@
 jQuery = $ = require('jquery');
 
 (function( $ ) {
-    $.fn.myPlugin = function() {
+    $.fn.animatedLabelPlugin = function() {
         
         let form = this;
         let label = $(form).find('label');
