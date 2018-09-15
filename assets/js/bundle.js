@@ -86,14 +86,27 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/componentsStyle.js":
+/*!***********************************!*\
+  !*** ./src/js/componentsStyle.js ***!
+  \***********************************/
+/*! exports provided: formStyle, inputStyle, labelStyle */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"formStyle\", function() { return formStyle; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"inputStyle\", function() { return inputStyle; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"labelStyle\", function() { return labelStyle; });\nconst formStyle = {\r\n    position: 'relative'\r\n}\r\n\r\nconst inputStyle = {\r\n    display: 'block',\r\n    height: '100%',\r\n    width: '100%'\r\n};\r\n\r\nconst labelStyle = {\r\n    position: 'absolute',\r\n    height: '100%',\r\n    display: 'flex',\r\n    alignItems: 'center',\r\n    'justify-content': 'flex-start',\r\n    bottom: '0',\r\n    transition: '0.3s'\r\n}\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/js/componentsStyle.js?");
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("(function( $ ) {\r\n    $.fn.animatedLabelPlugin = function() {\r\n        \r\n        let form = this;\r\n        let label = $(form).find('label');\r\n        let input = $(form).find('input');\r\n\r\n        $(input).focusin(function(){\r\n            $(label).css('bottom', '100%');\r\n        })\r\n        \r\n        $(input).focusout(function(){\r\n            if($(label).val() == ''){\r\n                $(label).css('bottom', '0');\r\n            }\r\n        })\r\n    };\r\n})( $ );\n\n//# sourceURL=webpack:///./src/js/main.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _componentsStyle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./componentsStyle */ \"./src/js/componentsStyle.js\");\n\r\n\r\n(function( $ ) {\r\n    $.fn.animatedLabelPlugin = function() {\r\n        \r\n        let form = this;        \r\n        let label = $(form).find('label');\r\n        let input = $(form).find('input');\r\n        \r\n        $(form).css(_componentsStyle__WEBPACK_IMPORTED_MODULE_0__[\"formStyle\"]);\r\n        $(label).css(_componentsStyle__WEBPACK_IMPORTED_MODULE_0__[\"labelStyle\"]);\r\n        $(input).css(_componentsStyle__WEBPACK_IMPORTED_MODULE_0__[\"inputStyle\"]);\r\n\r\n        $(input).focusin(function(){\r\n            $(label).css('bottom', '100%');\r\n        })\r\n        \r\n        $(input).focusout(function(){\r\n            if($(label).val() == ''){\r\n                $(label).css('bottom', '0');\r\n            }\r\n        })\r\n    };\r\n})( $ );\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 
