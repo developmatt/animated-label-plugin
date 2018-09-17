@@ -14,7 +14,8 @@ const labelStyle = {
     alignItems: 'center',
     'justify-content': 'flex-start',
     bottom: '0',
-    transition: '0.3s'
+    transition: '0.3s',
+    padding: '0 10px'
 }
 
 

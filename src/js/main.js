@@ -16,7 +16,7 @@ import * as componentsStyle from './componentsStyle';
             })
             
             $(input).focusout(function(){
-                if($(label).val() == ''){
+                if($(this).val() == ''){
                     $(label).css('bottom', '0');
                 }
             })
