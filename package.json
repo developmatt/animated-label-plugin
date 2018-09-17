@@ -1,10 +1,8 @@
 {
   "name": "animated-label",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "scripts": {
-    "dev": "webpack",
-    "prod": "cross-env NODE_ENV=production webpack",
-    "watch": "webpack --watch"
+    "build": "webpack"
   },
   "author": {
     "name": "Matheus Godoi",
@@ -28,8 +26,8 @@
   "description": "Add life to your form inputs! This plugin add a elegant animation in label form.",
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "@wordpress/babel-preset-default": "^2.1.0",
     "@babel/runtime-corejs2": "^7.0.0",
+    "@wordpress/babel-preset-default": "^2.1.0",
     "autoprefixer": "^9.1.3",
     "babel-loader": "^8.0.0",
     "cross-env": "^5.2.0",
