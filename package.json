@@ -1,6 +1,6 @@
 {
   "name": "animated-label",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "build:dev": "webpack",
     "build:production": "cross-env NODE_ENV=production webpack",
