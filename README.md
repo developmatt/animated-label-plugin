@@ -10,6 +10,7 @@ Add life to your form inputs! This plugin add a elegant animation in label form.
  `require('animated-label')`
 
 - In HTML create your form input container. In this container must be the input text file and it's respective label:
+
 ![Implementation example](https://image.ibb.co/gtfaWe/label.png) 
 
  - Now, it's just inform to the **Animated Label Plugin** wich label you want animate through the plugin method `animatedLabelPlugin()` (inform the label parent):

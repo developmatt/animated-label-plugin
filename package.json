@@ -1,11 +1,31 @@
 {
   "name": "animated-label",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "build:dev": "webpack",
     "build:production": "cross-env NODE_ENV=production webpack",
     "watch": "webpack --watch"
   },
+  "author": {
+    "name": "Matheus Godoi",
+    "email": "hi.developmatt@gmail.com",
+    "url": "https://developmatt.com"
+  },
+  "keywords": [
+    "label",
+    "animation",
+    "form"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developmatt/animated-label-plugin.git"
+  },
+  "homepage": "https://github.com/developmatt/animated-label-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/developmatt/animated-label-plugin/issues"
+  },
+  "license": "MIT",
+  "description": "Add life to your form inputs! This plugin add a elegant animation in label form.",
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@wordpress/babel-preset-default": "^2.1.0",
