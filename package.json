@@ -1,9 +1,9 @@
 {
   "name": "animated-label",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "scripts": {
-    "build:dev": "webpack",
-    "build:production": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack",
+    "prod": "cross-env NODE_ENV=production webpack",
     "watch": "webpack --watch"
   },
   "author": {
@@ -46,5 +46,5 @@
   "dependencies": {
     "jquery": "^3.3.1"
   },
-  "main": "assets/js/bundle.js"
+  "main": "dist/js/bundle.js"
 }
