@@ -1,6 +1,6 @@
 {
   "name": "animated-label",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "scripts": {
     "build": "webpack"
   },
@@ -40,9 +40,6 @@
     "sass-loader": "^7.1.0",
     "webpack": "^4.17.2",
     "webpack-cli": "^3.1.0"
-  },
-  "dependencies": {
-    "jquery": "^3.3.1"
   },
   "main": "dist/js/bundle.js"
 }

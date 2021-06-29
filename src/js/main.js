@@ -1,25 +1,31 @@
 import * as componentsStyle from './componentsStyle';
 
-(function( $ ) {
-    $.fn.animatedLabelPlugin = function() {
-        $(this).each(function(){
-            let form = this;
-            let label = $(form).find('label');
-            let input = $(form).find('input');
-            
-            $(form).css(componentsStyle.formStyle);
-            $(label).css(componentsStyle.labelStyle);
-            $(input).css(componentsStyle.inputStyle);
+function init(element) {
+    if(!element) return false;
+    else if(!element.length) renderAnimatedLabel(element);
+    else element.forEach(el => renderAnimatedLabel(el));
 
-            $(input).focusin(function(){
-                $(label).css('bottom', '100%');
-            })
-            
-            $(input).focusout(function(){
-                if($(this).val() == ''){
-                    $(label).css('bottom', '0');
-                }
-            })
-        })
-    };
-})( $ );
+    function renderAnimatedLabel(al) {
+        const form = al;
+        const label = form.querySelector('label');
+        const input = form.querySelector('input');
+
+        if(!form || !label || !input) return false;
+
+        Object.assign(form.style, componentsStyle.formStyle);
+        Object.assign(label.style, componentsStyle.labelStyle);
+        Object.assign(input.style, componentsStyle.inputStyle);
+
+        input.addEventListener('focusin', function() {
+            label.style.bottom = '100%';
+        });
+
+        input.addEventListener('focusout', function() {
+            label.style.bottom = '0';
+        });
+    }
+}
+
+const animatedLabel = init;
+
+export default animatedLabel;
